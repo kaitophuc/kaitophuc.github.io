@@ -1,0 +1,23 @@
+<header class="site-header">
+  <div class="site-header__inner">
+    <a class="site-title" href="{{ '/' | relative_url }}">{{ site.title }}</a>
+
+    <nav class="site-nav site-nav--desktop" aria-label="Main navigation">
+      {% for item in site.data.navigation.main %}
+        <a href="{{ item.url | relative_url }}"{% if page.url == item.url %} class="is-current" aria-current="page"{% endif %}>{{ item.title }}</a>
+      {% endfor %}
+    </nav>
+
+    <details class="site-navigation">
+      <summary class="site-nav-toggle">
+        <span>Menu</span>
+        <span class="site-nav-toggle__icon" aria-hidden="true"></span>
+      </summary>
+      <nav class="site-nav site-nav--mobile" aria-label="Main navigation">
+        {% for item in site.data.navigation.main %}
+          <a href="{{ item.url | relative_url }}"{% if page.url == item.url %} class="is-current" aria-current="page"{% endif %}>{{ item.title }}</a>
+        {% endfor %}
+      </nav>
+    </details>
+  </div>
+</header>

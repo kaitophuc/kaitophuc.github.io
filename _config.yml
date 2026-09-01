@@ -1,0 +1,45 @@
+# Site settings
+title: "Minh Phuc Nguyen"
+name: "Minh Phuc Nguyen"
+description: "Personal academic website for Minh Phuc Nguyen, a Computer Engineering student focused on GPU computing, high-performance computing, and machine learning systems."
+url: "https://kaitophuc.github.io"
+baseurl: ""
+repository: "kaitophuc/kaitophuc.github.io"
+
+# Academic/profile information.
+# TODO: Add a Google Scholar link only if you have a public profile.
+author:
+  name: "Minh Phuc Nguyen"
+  avatar: "/image.png"
+  bio: "Computer Engineering undergraduate at Union College focused on GPU computing, high-performance computing, accelerated systems, CUDA optimization, and machine learning systems."
+  location: "Union College, Schenectady, NY"
+  email: "nguyenp@union.edu"
+  github: "kaitophuc"
+  googlescholar: ""
+  linkedin: "https://www.linkedin.com/in/minhphucnguyen25/"
+  cv: "/Minh_Phuc_Nguyen_Resume_.pdf"
+
+# Jekyll settings
+markdown: kramdown
+highlighter: rouge
+permalink: /:categories/:title/
+include:
+  - _pages
+
+plugins:
+  - jekyll-include-cache
+
+defaults:
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: page
+
+exclude:
+  - coursework/Nguyen_Minh_Phuc_2686425_8_24_2026_Transcript.pdf
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - README.md

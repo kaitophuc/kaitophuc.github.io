@@ -1,0 +1,9 @@
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+.bundle/
+vendor/
+
+# Keep academic transcripts out of the public website repository.
+coursework/*Transcript*.pdf

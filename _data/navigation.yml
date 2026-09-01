@@ -1,0 +1,17 @@
+# Main navigation.
+# TODO: Rename or reorder items if your academic profile changes.
+main:
+  - title: "Home"
+    url: /
+  - title: "Research"
+    url: /research/
+  - title: "Work"
+    url: /work/
+  - title: "Projects"
+    url: /projects/
+  - title: "Coursework"
+    url: /coursework/
+  - title: "CV"
+    url: /cv/
+  - title: "Contact"
+    url: /contact/

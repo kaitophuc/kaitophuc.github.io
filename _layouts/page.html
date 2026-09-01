@@ -1,0 +1,15 @@
+---
+layout: default
+---
+
+<article class="page page--{{ page.title | slugify }}">
+  <header class="page-header">
+    <h1>{{ page.title }}</h1>
+    {% if page.lede %}
+      <p class="page-lede">{{ page.lede }}</p>
+    {% endif %}
+  </header>
+  <div class="page-body">
+    {{ content }}
+  </div>
+</article>
