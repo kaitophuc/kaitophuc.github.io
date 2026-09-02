@@ -16,11 +16,11 @@
     }
 
     function isOpen() {
-      return navigation.hasAttribute("open");
+      return toggle.getAttribute("aria-expanded") === "true";
     }
 
     function setOpen(open, returnFocus) {
-      navigation.toggleAttribute("open", open);
+      mobileMenu.hidden = !open;
       toggle.setAttribute("aria-expanded", String(open));
 
       if (!open && returnFocus) {
@@ -28,17 +28,17 @@
       }
     }
 
-    toggle.setAttribute("aria-expanded", String(isOpen()));
+    // Always begin closed, including when a WebView restores page state.
+    setOpen(false, false);
 
-    // Some in-app mobile WebViews do not reliably toggle a styled <summary>.
-    // Handle it explicitly while retaining the native <details> fallback.
-    toggle.addEventListener("click", function (event) {
-      event.preventDefault();
+    toggle.addEventListener("click", function () {
       setOpen(!isOpen(), false);
     });
 
     mobileMenu.addEventListener("click", function (event) {
-      if (event.target.closest("a")) {
+      var target = event.target;
+
+      if (target instanceof Element && target.closest("a")) {
         setOpen(false, false);
       }
     });

@@ -83,7 +83,7 @@ a:hover {
 }
 
 a:focus-visible,
-summary:focus-visible {
+.site-nav-toggle:focus-visible {
   border-radius: 4px;
   outline: 3px solid var(--focus);
   outline-offset: 3px;
@@ -982,6 +982,7 @@ dl {
 
   .site-nav-toggle {
     display: flex;
+    appearance: none;
     align-items: center;
     gap: 0.55rem;
     padding: 0.42rem 0.62rem;
@@ -993,11 +994,7 @@ dl {
     font-size: 0.9rem;
     font-weight: 700;
     cursor: pointer;
-    list-style: none;
-  }
-
-  .site-nav-toggle::-webkit-details-marker {
-    display: none;
+    touch-action: manipulation;
   }
 
   .site-nav-toggle__icon {
@@ -1008,11 +1005,11 @@ dl {
     transform: translateY(-0.12rem) rotate(45deg);
   }
 
-  .site-navigation[open] .site-nav-toggle__icon {
+  .site-nav-toggle[aria-expanded="true"] .site-nav-toggle__icon {
     transform: translateY(0.12rem) rotate(225deg);
   }
 
-  .site-navigation:not([open]) > .site-nav--mobile {
+  .site-nav--mobile[hidden] {
     display: none;
   }
 

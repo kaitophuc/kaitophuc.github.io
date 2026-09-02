@@ -8,16 +8,24 @@
       {% endfor %}
     </nav>
 
-    <details class="site-navigation">
-      <summary class="site-nav-toggle">
+    <div class="site-navigation">
+      <button
+        class="site-nav-toggle"
+        type="button"
+        aria-expanded="false"
+        aria-controls="mobile-navigation">
         <span>Menu</span>
         <span class="site-nav-toggle__icon" aria-hidden="true"></span>
-      </summary>
-      <nav class="site-nav site-nav--mobile" aria-label="Main navigation">
+      </button>
+      <nav
+        class="site-nav site-nav--mobile"
+        id="mobile-navigation"
+        aria-label="Main navigation"
+        hidden>
         {% for item in site.data.navigation.main %}
           <a href="{{ item.url | relative_url }}"{% if page.url == item.url %} class="is-current" aria-current="page"{% endif %}>{{ item.title }}</a>
         {% endfor %}
       </nav>
-    </details>
+    </div>
   </div>
 </header>
