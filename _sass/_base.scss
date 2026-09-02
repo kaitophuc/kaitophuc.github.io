@@ -1020,20 +1020,26 @@ dl {
     position: absolute;
     top: calc(100% - 0.35rem);
     right: 1.25rem;
-    width: min(16rem, calc(100% - 2.5rem));
+    left: 1.25rem;
+    width: auto;
     padding: 0.55rem;
     display: grid;
+    justify-content: stretch;
+    align-items: stretch;
     gap: 0.2rem;
     border: 1px solid var(--border);
     border-radius: var(--radius-md);
     background: var(--surface);
     box-shadow: var(--shadow-md);
+    text-align: left;
   }
 
   .site-nav--mobile a {
+    display: block;
     width: 100%;
     padding: 0.58rem 0.7rem;
     border-radius: var(--radius-sm);
+    text-align: left;
   }
 
   .page-content {
@@ -1098,7 +1104,7 @@ dl {
 
   .site-nav--mobile {
     right: 1rem;
-    width: calc(100% - 2rem);
+    left: 1rem;
   }
 
   .page-content {
