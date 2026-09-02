@@ -53,7 +53,7 @@ lede: "Selected work in GPU computing, high-performance systems, machine learnin
         <ul class="project-achievements">
           <li>Built CPU and persistent-kernel CUDA simulators for orthogonal frequency-division multiplexing with index modulation (OFDM-IM).</li>
           <li>Used CUB reductions and cuRAND generation to keep Monte Carlo trials on the GPU and reduce kernel-launch and data-transfer overhead.</li>
-          <li>Added reproducible BER, runtime, GFLOPS, and resource-usage tooling; the repository-recorded largest-workload benchmark achieved a 474.5× median speedup (19.68 s CPU versus 41.47 ms GPU at <em>L</em> = 102,400,000).</li>
+          <li>Added reproducible BER, runtime, GFLOPS, and resource-usage tooling; at the repository’s largest recorded workload (<em>L</em> = 102,400,000), the GPU simulator achieved a 474.5× median speedup (19.68 s CPU versus 41.47 ms GPU).</li>
         </ul>
       </article>
 

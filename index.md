@@ -27,7 +27,7 @@ permalink: /
       <span aria-hidden="true">|</span>
       <a href="https://www.linkedin.com/in/minhphucnguyen25/">LinkedIn</a>
       <span aria-hidden="true">|</span>
-      <a href="{{ '/Minh_Phuc_Nguyen_Resume_.pdf' | relative_url }}">Resume</a>
+      <a href="{{ '/resume/main.pdf' | relative_url }}">Resume</a>
     </p>
   </div>
 </div>
@@ -39,7 +39,7 @@ permalink: /
     <div class="prose">
       <p>I am a Computer Engineering undergraduate at Union College with experience in high-performance computing and accelerated systems, especially GPU computing. My work focuses on applying CUDA/C++ and parallel computing techniques to improve the performance of computationally intensive workloads.</p>
 
-      <p>At Union College, I spent two summers as a Research Assistant with <a href="mailto:andersm2@union.edu">Professor Matthew Anderson</a> in the Computer Lab, optimizing search programs for <a href="https://arxiv.org/abs/2307.06463">Simplifiable Strong Uniquely Solvable Puzzles</a>. I also worked one summer as a Research Assistant with <a href="mailto:mohammau@union.edu">Professor Umair Mohammad</a> on neural receiver design for 5G NR/6G systems, with interest in edge base-station deployment and GPU acceleration. Currently, I am working on a thesis project with <a href="mailto:traverc@union.edu">Professor Cherrice Traver</a> focused on developing an autonomous self-driving robot system.</p>
+      <p>At Union College, I spent two summers as a Research Assistant with <a href="mailto:andersm2@union.edu">Professor Matthew Anderson</a> in the Computer Lab, optimizing search programs for <a href="https://arxiv.org/abs/2307.06463">Simplifiable Strong Uniquely Solvable Puzzles</a>. I also worked one summer as a Research Assistant with <a href="mailto:mohammau@union.edu">Professor Umair Mohammad</a> on neural receiver design for 5G NR/6G systems, with an interest in edge base-station deployment and GPU acceleration. Currently, I am working on a thesis project with <a href="mailto:traverc@union.edu">Professor Cherrice Traver</a> focused on developing an autonomous self-driving robot system.</p>
 
       <p>Beyond research, I completed a two-term internship at an undisclosed hedge fund, where I worked on building and optimizing accelerated GPU computing libraries for large-scale quantitative workloads.</p>
 

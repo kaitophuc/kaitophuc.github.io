@@ -1,7 +1,7 @@
 ---
 title: "Research"
 permalink: /research/
-lede: "Four research experiences I am shaping into a clearer research story."
+lede: "My research focuses on applying CUDA/C++ and parallel computing techniques to improve the performance of computationally intensive workloads."
 ---
 
 <ul class="research-list" aria-label="Research experiences">
@@ -9,10 +9,10 @@ lede: "Four research experiences I am shaping into a clearer research story."
     <span class="research-dot" aria-hidden="true"></span>
     <div>
       <h2>GPU-Accelerated SUSP Search</h2>
-      <p class="research-time">01/2024 - 02/2026</p>
+      <p class="research-time">Jan 2024–Feb 2026</p>
       <div class="research-materials" aria-label="SUSP materials by year">
         <p>
-          Developed GPU-accelerated methods for searching Simplifiable Strong Uniquely Solvable Puzzles (SUSPs), combinatorial objects connected to upper bounds on the matrix multiplication exponent. The work evolved from an initial CUDA implementation into a batched, asynchronous CPU-GPU search pipeline.
+          I developed GPU-accelerated methods for searching Simplifiable Strong Uniquely Solvable Puzzles (SUSPs), combinatorial objects connected to upper bounds on the matrix multiplication exponent. The work evolved from an initial CUDA implementation into a batched, asynchronous CPU-GPU search pipeline.
         </p>
         <section class="research-year">
           <h3>2026</h3>
@@ -54,10 +54,10 @@ lede: "Four research experiences I am shaping into a clearer research story."
     <span class="research-dot" aria-hidden="true"></span>
     <div>
       <h2>Neural Receiver Design for MIMO-OFDM</h2>
-      <p class="research-time">03/2026 - Current</p>
+      <p class="research-time">Mar 2026–Present</p>
       <div class="research-materials" aria-label="Neural receiver research materials">
         <p>
-          Designed and evaluated an LS-assisted residual CNN receiver for a coded 2×2 MIMO-OFDM link, replacing conventional LMMSE equalization and APP demapping. Benchmarked the frozen model against the classical receiver across 45 3GPP TDL channel environments to study how BER and FER change with SNR, delay spread, and mobility.
+          I am developing an LS-assisted residual CNN receiver for a coded 2×2 MIMO-OFDM link that replaces conventional LMMSE equalization and APP demapping. So far, I have benchmarked the frozen model against the classical receiver across 45 3GPP TDL channel environments to study how BER and FER change with SNR, delay spread, and mobility.
         </p>
         <section class="research-year">
           <h3>2026</h3>
@@ -75,10 +75,10 @@ lede: "Four research experiences I am shaping into a clearer research story."
     <span class="research-dot" aria-hidden="true"></span>
     <div>
       <h2>Approximate Nearest Neighbor Search</h2>
-      <p class="research-time">01 - 06/2026</p>
+      <p class="research-time">Jan–Jun 2026</p>
       <div class="research-materials" aria-label="Approximate nearest neighbor search materials">
         <p>
-          Built and evaluated a two-stage multi-GPU vector-search pipeline using NVIDIA RAPIDS cuVS and a custom CUDA candidate-reranking module. Benchmarked IVF-PQ and CAGRA on five million 1,536-dimensional embeddings to study the trade-off between throughput, latency, and Recall@10.
+          I built and evaluated a two-stage multi-GPU vector-search pipeline using NVIDIA RAPIDS cuVS and a custom CUDA candidate-reranking module. I benchmarked IVF-PQ and CAGRA on five million 1,536-dimensional embeddings to study the trade-off between throughput, latency, and Recall@10.
         </p>
         <section class="research-year">
           <h3>2026</h3>
@@ -96,10 +96,10 @@ lede: "Four research experiences I am shaping into a clearer research story."
     <span class="research-dot" aria-hidden="true"></span>
     <div>
       <h2>VANFIST: Autonomous Vehicle Perception</h2>
-      <p class="research-time">01 - 06/2025; 03/2026 - Current</p>
+      <p class="research-time">Jan–Jun 2025; Mar 2026–Present</p>
       <div class="research-materials" aria-label="VANFIST research overview">
         <p>
-          Developing the visual perception system for VANFIST, a student-built autonomous vehicle powered by an NVIDIA Jetson Orin Nano. My work focuses on semantic segmentation and object detection, with ongoing thesis research aimed at improving accuracy and real-time inference on edge hardware.
+          I am developing the visual perception system for VANFIST, a student-built autonomous vehicle powered by an NVIDIA Jetson Orin Nano. My work focuses on semantic segmentation and object detection, with ongoing thesis research aimed at improving accuracy and real-time inference on edge hardware.
         </p>
         <section class="research-year">
           <h3>2026</h3>
