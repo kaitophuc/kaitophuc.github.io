@@ -23,7 +23,7 @@ lede: "My research focuses on applying CUDA/C++ and parallel computing technique
             </li>
             <li>
               <a href="{{ '/research/SUSP/2026/Minh_Phuc_Nguyen_sc26_acm_src_poster.pdf' | relative_url }}">Batched GPU Execution for High-Throughput Combinatorial Search</a>
-              <span>Submitted to the SC26 ACM Student Research Competition; decision pending.</span>
+              <span>Accepted to the SC26 ACM Student Research Competition on September 10, 2026.</span>
             </li>
           </ul>
         </section>

@@ -350,7 +350,14 @@ dl {
   align-items: start;
 }
 
-.home-section {
+.home-main {
+  display: grid;
+  gap: var(--space-4);
+  min-width: 0;
+}
+
+.home-section,
+.experience-card {
   min-width: 0;
   padding: 1.35rem 1.45rem;
   border: 1px solid var(--border);
@@ -369,11 +376,8 @@ dl {
   margin-bottom: 0;
 }
 
-.home-section--interests {
-  background: linear-gradient(145deg, var(--surface-subtle), var(--surface));
-}
-
-.interest-list {
+.interest-list,
+.experience-card .achievement-list {
   display: grid;
   gap: 0.7rem;
   margin: 0;
@@ -381,14 +385,19 @@ dl {
   list-style: none;
 }
 
-.interest-list li {
+.interest-list li,
+.experience-card .achievement-list li {
   position: relative;
   padding-left: 1.1rem;
+}
+
+.interest-list li {
   color: var(--text-subtle);
   font-size: 0.95rem;
 }
 
-.interest-list li::before {
+.interest-list li::before,
+.experience-card .achievement-list li::before {
   position: absolute;
   top: 0.68em;
   left: 0;
@@ -399,6 +408,62 @@ dl {
   content: "";
 }
 
+.recent-updates-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.recent-updates-list li {
+  position: relative;
+  padding: 0 0 1.25rem 1.15rem;
+}
+
+.recent-updates-list li::before {
+  position: absolute;
+  top: 0.34rem;
+  left: 0;
+  width: 0.42rem;
+  height: 0.42rem;
+  border-radius: 50%;
+  background: var(--link);
+  box-shadow: 0 0 0 3px var(--accent-soft);
+  content: "";
+}
+
+.recent-updates-list li::after {
+  position: absolute;
+  top: 0.95rem;
+  bottom: 0.25rem;
+  left: 0.18rem;
+  width: 1px;
+  background: var(--border);
+  content: "";
+}
+
+.recent-updates-list li:last-child {
+  padding-bottom: 0;
+}
+
+.recent-updates-list li:last-child::after {
+  display: none;
+}
+
+.recent-updates-list time {
+  display: block;
+  margin-bottom: 0.35rem;
+  color: #526477;
+  font-size: 0.8rem;
+  font-weight: 650;
+  line-height: 1.4;
+}
+
+.recent-updates-list p {
+  margin: 0;
+  font-size: 0.92rem;
+  line-height: 1.6;
+}
+
 /* Shared section and list treatments */
 .section-heading {
   margin-bottom: var(--space-3);
@@ -406,40 +471,27 @@ dl {
   border-bottom: 1px solid var(--border);
 }
 
-.achievement-list,
 .skill-list,
 .project-summary-list {
   margin-bottom: 0;
   padding-left: 1.2rem;
 }
 
-.achievement-list li,
 .skill-list li,
 .project-summary-list li {
   margin-bottom: 0.55rem;
   padding-left: 0.15rem;
 }
 
-.achievement-list li:last-child,
 .skill-list li:last-child,
 .project-summary-list li:last-child {
   margin-bottom: 0;
 }
 
 /* Work */
-.experience-card {
-  max-width: var(--reading-width);
-  padding: 1.45rem 1.55rem;
-  border: 1px solid var(--border);
-  border-left: 4px solid var(--link);
-  border-radius: var(--radius-md);
-  background: var(--surface);
-  box-shadow: var(--shadow-md);
-}
-
 .experience-card__header {
-  margin-bottom: 1.15rem;
-  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+  padding-bottom: 0.65rem;
   border-bottom: 1px solid var(--border);
 }
 
@@ -448,13 +500,17 @@ dl {
 }
 
 .experience-organization {
-  margin-bottom: 0.05rem;
+  margin-bottom: 0.15rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  line-height: 1.5;
 }
 
 .experience-time {
   margin: 0;
-  color: var(--muted);
-  font-size: 0.94rem;
+  color: #526477;
+  font-size: 0.9rem;
+  line-height: 1.5;
 }
 
 /* Projects */
@@ -953,10 +1009,6 @@ dl {
 @media (max-width: 840px) {
   .home-sections {
     grid-template-columns: 1fr;
-  }
-
-  .home-section--interests {
-    max-width: var(--reading-width);
   }
 }
 
