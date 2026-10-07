@@ -37,6 +37,7 @@ defaults:
       layout: page
 
 exclude:
+  - research/Sionna/report_ieee.pdf
   - coursework/Nguyen_Minh_Phuc_2686425_8_24_2026_Transcript.pdf
   - Gemfile
   - Gemfile.lock

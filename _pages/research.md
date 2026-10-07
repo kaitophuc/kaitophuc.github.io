@@ -63,7 +63,7 @@ lede: "My research focuses on applying CUDA/C++ and parallel computing technique
           <h3>2026</h3>
           <ul>
             <li>
-              <a href="{{ '/research/Sionna/report_ieee.pdf' | relative_url }}">Full-Grid Neural Reception for Coded 2×2 MIMO-OFDM Across 3GPP TDL Channels</a>
+              Full-Grid Neural Reception for Coded 2×2 MIMO-OFDM Across 3GPP TDL Channels
               <span>Unpublished manuscript, 2026.</span>
             </li>
           </ul>

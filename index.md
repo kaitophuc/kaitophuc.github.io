@@ -70,7 +70,7 @@ permalink: /
       </li>
       <li>
         <time datetime="2026-08-15">Aug 15, 2026</time>
-        <p>Submitted my final summer research report, <a href="{{ '/research/Sionna/report_ieee.pdf' | relative_url }}"><em>Full-Grid Neural Reception for Coded 2×2 MIMO-OFDM Across 3GPP TDL Channels</em></a>, to Professor Umair Mohammad.</p>
+        <p>Submitted my final summer research report, <em>Full-Grid Neural Reception for Coded 2×2 MIMO-OFDM Across 3GPP TDL Channels</em>, to Professor Umair Mohammad.</p>
       </li>
       <li>
         <time datetime="2026-08-02">Aug 2, 2026</time>
